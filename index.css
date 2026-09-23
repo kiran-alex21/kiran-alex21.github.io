@@ -4,10 +4,14 @@ body {
   text-align:center;
   font-family:Tahoma
 }
+ul {
+  text-align:center;
+}
 h1 {
   font-size:50px
 }
 p {
+  margin:auto;
   font-size:20px
 }
 a:link {
