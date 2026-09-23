@@ -29,8 +29,12 @@ body {
 }
 .container div.content {
   grid-area: content;
+  margin: auto
 }
-
+.container div.footer {
+  grid-area: footer;
+  text-align: center;  
+}
 
 h1 {
   font-size:50px
@@ -65,8 +69,4 @@ a:active {
   background-color: transparent;
   font-weight: bold;
   text-decoration: underline;
-}
-.container div.footer {
-  grid-area: footer;
-  text-align: center;  
 }
