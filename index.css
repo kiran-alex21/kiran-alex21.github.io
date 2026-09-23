@@ -10,3 +10,28 @@ h1 {
 p {
   font-size:20px
 }
+a:link {
+  color: DarkSlateGray;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: CornflowerBlue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: DarkGray;
+  background-color: transparent;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a:active {
+  color: CornflowerBlue;
+  background-color: transparent;
+  font-weight: bold;
+  text-decoration: underline;
+}
