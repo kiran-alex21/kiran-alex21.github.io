@@ -50,7 +50,7 @@ ul {
 }
 
 a:link {
-  color: DarkGray;
+  color: DimGray;
   background-color: transparent;
   text-decoration: underline;
 }
@@ -60,7 +60,7 @@ a:visited {
   text-decoration: underline;
 }
 a:hover {
-  color: DarkGray;
+  color: DimGray;
   background-color: transparent;
   font-weight: bold;
   text-decoration: underline;
