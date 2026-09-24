@@ -1,5 +1,5 @@
 body {
-  background-color:DarkSlateBlue;
+  background-color:CadetBlue;
   color:Black;
   font-family:Tahoma
 }
@@ -17,7 +17,7 @@ body {
   padding: 5px;
 }
 .container div {
-  background-color: DarkSlateBlue;
+  background-color: CadetBlue;
   padding: 10px;
 }
 .container div.header {
@@ -46,6 +46,7 @@ p {
 }
 ul {
   list-style-position: inside;
+  text-align: left;
 }
 
 a:link {
