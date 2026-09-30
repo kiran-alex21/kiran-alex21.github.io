@@ -1,6 +1,6 @@
 body {
-  background-color:CadetBlue;
-  color:Black;
+  background-color:#292c33; /*grey-blue*/
+  color:#040405; /*Black*/
   font-family:Tahoma
 }
 
@@ -13,11 +13,11 @@ body {
     "footer footer";
   grid-template-columns: 1fr 3fr;
   gap: 3px;
-  background-color: Grey;
+  background-color: #040405; /*Black*/
   padding: 5px;
 }
 .container div {
-  background-color: CadetBlue;
+  background-color: #292c33; /*grey-blue*/
   padding: 10px;
 }
 .container div.header {
@@ -50,23 +50,23 @@ ul {
 }
 
 a:link {
-  color: DimGray;
+  color: #0d0f12; /*light-black*/
   background-color: transparent;
   text-decoration: underline;
 }
 a:visited {
-  color: DarkSlateGray;
+  color: #181b24; /*dark-blue-grey*/
   background-color: transparent;
   text-decoration: underline;
 }
 a:hover {
-  color: DimGray;
+  color: #0d0f12; /*light-black*/
   background-color: transparent;
   font-weight: bold;
   text-decoration: underline;
 }
 a:active {
-  color: DarkSlateGray;
+  color: #181b24; /*dark-blue-grey*/
   background-color: transparent;
   font-weight: bold;
   text-decoration: underline;
