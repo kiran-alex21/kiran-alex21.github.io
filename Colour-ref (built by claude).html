@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Amethyst and sky (dark): colour reference</title>
+<style>
+:root{--bg:#16161E;--card:#23232F;--text:#ECEBF3;--muted:#A9A8BA;--line:#34344A;--accent:#8F73DB;--gold:#F2C75C;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}
+main{max-width:760px;margin:0 auto;padding:32px 20px 48px}
+h1{font-size:28px;margin:0 0 6px;color:var(--accent)}
+h2{font-size:19px;margin:36px 0 4px}
+p{margin:0 0 12px}
+.muted{color:var(--muted);font-size:15px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin-top:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.chip{height:76px;border-bottom:1px solid var(--line)}
+.info{padding:12px 14px}
+.name{font-weight:600;font-size:16px}
+.use{font-size:13px;color:var(--muted);margin:2px 0 8px}
+button{font:inherit;font-size:14px;font-family:ui-monospace,Consolas,monospace;background:transparent;color:var(--text);border:1px solid var(--line);border-radius:8px;padding:4px 10px;cursor:pointer}
+button:hover{border-color:var(--accent)}
+pre{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:14px 0 10px;font-family:ui-monospace,Consolas,monospace;font-size:13px;line-height:1.7;overflow-x:auto}
+.tips{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:8px;padding:14px 18px;margin-top:36px}
+.tips p{margin:0 0 8px;font-size:15px}
+.tips p:last-child{margin:0}
+</style>
+</head>
+<body>
+<main>
+<h1>Amethyst and sky (dark)</h1>
+<p class="muted">My website colour reference. Tap any code to copy it.</p>
+
+<div class="grid" id="grid"></div>
+
+<h2>Ready to paste</h2>
+<p class="muted">This is a short block of code for your website's style file. The notes between the /* and */ marks are comments. They are only for you and don't change how the site looks.</p>
+<pre id="snippet"></pre>
+<button type="button" id="copyall">Copy all</button>
+
+<div class="tips">
+<p><strong>Good to know</strong></p>
+<p>Use the names above in your comments so you always know which colour is which, for example /* Sunlit gold: highlight */.</p>
+<p>Gold stands out strongly on dark colours, so a little goes a long way.</p>
+</div>
+</main>
+
+<script>
+var colours=[
+["Deep night","#16161E","Page background","--deep-night"],
+["Slate ink","#23232F","Cards and panels","--slate-ink"],
+["Moon mist","#ECEBF3","Main text","--moon-mist"],
+["Amethyst","#8F73DB","Buttons and headings","--amethyst"],
+["Clear sky","#5BA6EB","Links","--clear-sky"],
+["Sunlit gold","#F2C75C","Highlights and small touches","--sunlit-gold"]
+];
+function flash(b,orig){
+  b.textContent="Copied";
+  setTimeout(function(){b.textContent=orig},1200);
+}
+function copy(text,b,orig){
+  try{
+    navigator.clipboard.writeText(text).then(function(){flash(b,orig)},function(){});
+  }catch(e){}
+}
+var grid=document.getElementById("grid");
+colours.forEach(function(c){
+  var card=document.createElement("div");card.className="card";
+  var chip=document.createElement("div");chip.className="chip";chip.style.background=c[1];
+  var info=document.createElement("div");info.className="info";
+  var n=document.createElement("div");n.className="name";n.textContent=c[0];
+  var u=document.createElement("div");u.className="use";u.textContent=c[2];
+  var b=document.createElement("button");b.type="button";b.textContent=c[1];
+  b.addEventListener("click",function(){copy(c[1],b,c[1])});
+  info.appendChild(n);info.appendChild(u);info.appendChild(b);
+  card.appendChild(chip);card.appendChild(info);grid.appendChild(card);
+});
+var lines=[":root {"];
+colours.forEach(function(c){
+  lines.push("  "+c[3]+": "+c[1]+"; /* "+c[0]+": "+c[2].toLowerCase()+" */");
+});
+lines.push("}");
+var code=lines.join("\n");
+document.getElementById("snippet").textContent=code;
+var all=document.getElementById("copyall");
+all.addEventListener("click",function(){copy(code,all,"Copy all")});
+</script>
+</body>
+</html>
