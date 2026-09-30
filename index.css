@@ -69,13 +69,13 @@ a:visited {
   text-decoration: underline;
 }
 a:hover {
-  color: #5BA6EB; /*Clear Sky*/
+  color: #F2C75C; /* Sunlit gold */
   background-color: transparent;
   font-weight: bold;
   text-decoration: underline;
 }
 a:active {
-  color: #5BA6EB; /*Clear Sky*/
+  color: #F2C75C; /* Sunlit gold */
   background-color: transparent;
   font-weight: bold;
   text-decoration: underline;
