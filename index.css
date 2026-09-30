@@ -53,8 +53,8 @@ ul {
   text-align: left;
 }
 hr {
-  color: #F2C75C; /*Sunlit Gold*/
-  background-color:#F2C75C; /*Sunlit Gold*/
+  border: none;
+  border-top: 2px solid #F2C75C; /* Sunlit gold */
 }
 
 a:link {
