@@ -1,5 +1,6 @@
 body {
   color:#ECEBF3; /*(text)Moon mist*/
+  background-color: #16161E; /*Deep Night*/
   font-family:Tahoma
 }
 
@@ -50,6 +51,7 @@ ul {
 }
 hr {
   color: #F2C75C; /*Sunlit Gold*/
+  background-color:#F2C75C; /*Sunlit Gold*/
 }
 
 a:link {
