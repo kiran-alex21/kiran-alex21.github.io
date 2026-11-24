@@ -1,61 +1,83 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="Utility/index.css">
     <title>Kiran's Site - Coding Projects</title>
   </head>
   <body>
     <div class = "container">
-      <div class = "header">
+      <header>
         <h1>Coding Projects</h1>
-      </div>
-      <div class = "menu">
+      </header>
+      <nav>
         <ul>
           <li><a href="index.html">About</a></li>
           <li><a href="usefulSites.html">Useful Sites</a></li>
           <li><a href="codingProjects.html">Coding Projects</a></li>
         </ul>
-      </div>
-      <div class = "content">
+      </nav>
+      <main>
         <p>These are all projects which I have completed in my spare time. If they are available, there will be a link attached.</p>
         <hr>
-        <h3>Digital 'Dice'</h3>
-        <ul>
-          <li><a href="https://github.com/kiran-alex21/Games/tree/daf100fdc8773df7e5497ef955eef12a1fc55369/Dice">Veiw the source code and download the .exe here</a></li>
-          <li>It 'rolls' a 6-sided dice each time you click 'roll'.</li>
-          <li>My first full program that I finialized.</li>
-          <li>Written in Python, with tkinter for GUI and pyinstaller to create the executable.</li>
-        </ul>
-        <hr>
-        <h3>Rock/Paper/Scissors</h3>
-        <ul>
-          <li><a href="https://github.com/kiran-alex21/Games/tree/daf100fdc8773df7e5497ef955eef12a1fc55369/RPS">
-            Veiw the source code here</a>(.exe will be coming soon)</li>
-          <li>Allows you to play Rock/Paprr/Scissors with the computer.</li>
-          <li>Includes images for both buttons and results.</li>
-          <li>Written in python, with tkinter as the GUI base.</li>
-        </ul>
-        <hr>
-        <h3>Bounce</h3>
-        <ul>
-          <li><a href="https://github.com/kiran-alex21/Games/tree/daf100fdc8773df7e5497ef955eef12a1fc55369/Bounce">
-            Veiw the source code here</a></li>
-          <li>Ball and Paddle game - keep the ball bouncing.</li>
-          <li>Score a point for each bounce, and records your highscore each time.</li>
-          <li>Written in python, with tkinter as the GUI base.</li>
-        </ul>
-        <hr>
-        <h3>BlackJack (Improvements still to be made)</h3>
-        <ul>
-          <li><a href="https://github.com/kiran-alex21/Games/tree/daf100fdc8773df7e5497ef955eef12a1fc55369/BlackJack">
-            Veiw the source code, development process and first executable here.</a></li>
-          <li>Blackjack 1 player with the computer as the dealer. No betting included.</li>
-          <li>Allows you the hit/stand and calculates winner.</li>
-          <li>First Project using pygame</li>
-          <li>List of changes still to be made can be found on the Git.</li>
-          <li>Written in python, and powered with pygame-ce.</li>
-        </ul>
-      </div>
+        <section class="project-grid" aria-label="Coding Projects">
+          <article class="project-card">
+            <h2>Digital 'Dice'</h2>
+            <ul>
+              <li>It rolls a six-sided die each time you click “roll”.</li>
+              <li>My first full program that I finalized.</li>
+              <li>Written in Python, using tkinter for the GUI and PyInstaller to create the executable.</li>
+              <li>
+                <a href="https://github.com/kiran-alex21/Games/tree/daf100fdc8773df7e5497ef955eef12a1fc55369/Dice">
+                  View the source code and download the executable
+                </a>
+              </li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <h2>Rock/Paper/Scissors</h2>
+            <ul>
+              <li>Allows you to play Rock/Paper/Scissors with the computer.</li>
+              <li>Includes images for the buttons and results.</li>
+              <li>Written in Python, using tkinter for the GUI. An executable will be coming soon.</li>
+              <li>
+                <a href="https://github.com/kiran-alex21/Games/tree/daf100fdc8773df7e5497ef955eef12a1fc55369/RPS">
+                  View the source code
+                </a>
+              </li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <h2>Bounce</h2>
+            <ul>
+              <li>A ball-and-paddle game: keep the ball bouncing.</li>
+              <li>Score a point for each bounce; the game records your high score.</li>
+              <li>Written in Python, using tkinter for the GUI.</li>
+              <li>
+                <a href="https://github.com/kiran-alex21/Games/tree/daf100fdc8773df7e5497ef955eef12a1fc55369/Bounce">
+                  View the source code
+                </a>
+              </li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <h2>BlackJack (Improvements still to be made)</h2>
+            <ul>
+              <li>A one-player Blackjack game with the computer as the dealer. No betting is included.</li>
+              <li>Allows you to hit or stand, then calculates the winner.</li>
+              <li>My first project using pygame; written in Python and powered by pygame-ce.</li>
+              <li>A list of planned changes is available on GitHub.</li>
+              <li>
+                <a href="https://github.com/kiran-alex21/Games/tree/daf100fdc8773df7e5497ef955eef12a1fc55369/BlackJack">
+                  View the source code, development process, and first executable
+                </a>
+              </li>
+            </ul>
+          </article>
+        </section>
+      </main>
     </div>
   </body>
 </html>

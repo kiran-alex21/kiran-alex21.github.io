@@ -4,44 +4,11 @@ body {
   font-family:Tahoma
 }
 
-
-.container {
-  display: grid;
-  grid-template-areas:
-    "header header"
-    "menu content"
-    "footer footer";
-  grid-template-columns: 1fr 3fr;
-  gap: 3px;
-  background-color: #16161E; /*Deep Night*/
-  padding: 5px;
-}
-.container div {
-  background-color: #23232F; /*Slate Ink*/
-  padding: 10px;
-}
-.container div.header {
-  grid-area: header;
-  text-align: center;
-}
-.container div.menu {
-  grid-area: menu;
-}
-.container div.content {
-  grid-area: content;
-  text-align: left;
-  margin: 5px, 25px
-}
-.container div.footer {
-  grid-area: footer;
-  text-align: center;  
-}
-
 h1 {
   color: #8F73DB; /*Amethyst*/
   font-size:50px
 }
-h3 {
+h2 {
   color: #8F73DB; /*Amethyst*/
 }
 p {
@@ -79,4 +46,73 @@ a:active {
   background-color: transparent;
   font-weight: bold;
   text-decoration: underline;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "menu content"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  gap: 3px;
+  background-color: #16161E; /*Deep Night*/
+  padding: 5px;
+}
+
+header {
+  background-color: #23232F; /*Slate Ink*/
+  padding: 10px;
+  grid-area: header;
+  text-align: center;
+}
+nav {
+  background-color: #23232F; /*Slate Ink*/
+  padding: 10px;
+  grid-area: menu;
+}
+main {
+  background-color: #23232F; /*Slate Ink*/
+  padding: 10px;
+  grid-area: content;
+  text-align: left;
+  margin: 5px 25px;
+}
+footer {
+  background-color: #23232F; /*Slate Ink*/
+  padding: 10px;
+  grid-area: footer;
+  text-align: center;  
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
+}
+
+.project-card {
+  padding: 16px;
+  background-color: #23232F;
+  border: 1px solid #8F73DB;
+  border-radius: 10px;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.project-card:hover,
+.project-card:focus-within {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px #0006;
+}
+
+.project-image {
+  margin: 0 0 16px;
+}
+
+.project-image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 6px;
 }

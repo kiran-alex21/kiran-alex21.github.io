@@ -1,6 +1,6 @@
 //set constants
 const homepageButton = document.getElementById("homepageButton");
-const heading = document.getElementsById("heading");
+const heading = document.getElementById("heading");
 
 //Bold heading
 heading.addEventListener("mouseover", function(){
