@@ -6,7 +6,8 @@ body {
 
 h1 {
   color: #8F73DB; /*Amethyst*/
-  font-size:50px
+  font-size:50px;
+  font-weight: normal;
 }
 h2 {
   color: #8F73DB; /*Amethyst*/

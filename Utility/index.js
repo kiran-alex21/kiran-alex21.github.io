@@ -1,6 +1,8 @@
 //set constants
 const homepageButton = document.getElementById("homepageButton");
 const heading = document.getElementById("heading");
+const homepageDialog = document.getElementById("homepageDialog");
+const closeDialog = document.getElementById("closeDialog");
 
 //Bold heading
 heading.addEventListener("mouseover", function(){
@@ -10,7 +12,10 @@ heading.addEventListener("mouseout", function(){
     this.style.setProperty("font-weight", "normal")
 });
 
-//Magic Button
+//Homepage Button
 homepageButton.addEventListener("click", function(){
-    alert("It makes this message pop up! Hi there!")
+    homepageDialog.showModal();
+});
+closeDialog.addEventListener("click", function(){
+    homepageDialog.close();
 });
