@@ -25,6 +25,14 @@ hr {
   border-top: 2px solid #F2C75C; /* Sunlit gold */
   color: #F2C75C; /* Sunlit gold */
 }
+dialog {
+  background-color: #23232F; /*Slate Ink*/;
+  padding: 5px;
+  text-align: center;
+}
+button {
+  background-color: #F2C75C;
+}
 
 a:link {
   color: #5BA6EB; /*Clear Sky*/
