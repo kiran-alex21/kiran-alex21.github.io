@@ -26,12 +26,15 @@ hr {
   color: #F2C75C; /* Sunlit gold */
 }
 dialog {
+  color: #ECEBF3;
   background-color: #23232F; /*Slate Ink*/;
-  padding: 5px;
+  border-color:#16161E;
+  padding: 10px;
   text-align: center;
 }
 button {
   background-color: #F2C75C;
+  color:#23232F;
 }
 
 a:link {
