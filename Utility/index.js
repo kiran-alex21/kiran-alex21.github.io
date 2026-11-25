@@ -12,5 +12,5 @@ heading.addEventListener("mouseout", function(){
 
 //Magic Button
 homepageButton.addEventListener("click", function(){
-    alert("YOU CLICKED MY BUTTON!!")
+    alert("It makes this message pop up! Hi there!")
 });
